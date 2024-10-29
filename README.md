@@ -9,6 +9,7 @@ Ing. Edison Coronel.
 - Santiago Villamagua.
 - Leonardo Sánchez.
 - Luis Blacio.
+  luis.blacio@unl.edu.ec
 
 # Descripción 
 El siguiente diagrama de clases continen los diversos requerimientos:
