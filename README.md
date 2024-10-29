@@ -296,6 +296,12 @@ Inventario tiene relación 1..* con Administracion.
 
 TiposDeAnimales se divide en Omnivoros, Carroñeros, Carnivoros, y Herbivoros.
 
+
+# Diagrma en UML
+
+![image](https://github.com/user-attachments/assets/6ada0ba7-80a9-4896-a9ba-16ca4064138e)
+
+
 # Diagrama en base a GitFlow
 ![image](https://github.com/user-attachments/assets/3f2fa7b5-92e4-4db9-a8f8-85cd4e00d199)
 
@@ -544,6 +550,4 @@ public abstract class Empleado extends Persona {
     public abstract void realizarFuncion();
 }
 
-# UML imagen
-![image](https://github.com/user-attachments/assets/6ada0ba7-80a9-4896-a9ba-16ca4064138e)
 
