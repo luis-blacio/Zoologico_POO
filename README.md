@@ -299,7 +299,7 @@ TiposDeAnimales se divide en Omnivoros, Carroñeros, Carnivoros, y Herbivoros.
 
 # Diagrma en UML
 
-![image](https://github.com/user-attachments/assets/6ada0ba7-80a9-4896-a9ba-16ca4064138e)
+![image](https://github.com/user-attachments/assets/13d4d710-cedf-4f9e-8093-b7b5c425bc37)
 
 
 # Diagrama en base a GitFlow
