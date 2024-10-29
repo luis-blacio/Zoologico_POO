@@ -239,3 +239,164 @@ public abstract class Empleado extends Persona {
 
 # Descripción 
 El siguiente diagrama de clases continen los siguientes requerimientos:
+Modelo UML completo para un Zoológico
+
+**1. Persona**
+Atributos:
+-nombre: String
+-cedula: String
+-fechaNacimiento: Date
+Operaciones:
++calcularEdad(): int
+
+**2. Cliente (hereda de Persona)**
+Atributos:
+-tipoCliente: String (ej. "individual", "grupo", "miembro anual")
+Operaciones:
++solicitarBoleto(): Boleto
+Conexión:
+1.. relación* con Boleto (un cliente puede tener múltiples boletos).
+
+**3. Visitante (hereda de Persona)**
+Atributos:
+-tipoVisitante: String (ej. "niño", "adulto", "mayor")
+Operaciones:
++comprarBoleto(tipo: String): Boleto
+Conexión:
+1.. relación* con Boleto (un visitante puede tener múltiples boletos).
+
+**4. Limpieza**
+Atributos:
+horario: Time (paquete)
+-zonaAsignada: String
+Operaciones:
++asignarLimpieza(zona: String): void
+
+**5. Administración**
+Atributos:
+-nombre: String
+-cargo: String
+Operaciones:
++gestionarEmpleado(): void
++revisarInventario(): void
+
+**6. Veterinaria**
+Atributos:
+-nombreVeterinario: String
+-especialidad: String
+Operaciones:
++revisarAnimal(idAnimal: int): void
++recetarTratamiento(idAnimal: int): String
+Conexión:
+1.. relación* con RegistroMedico (un veterinario puede crear múltiples registros médicos).
+
+**7. Zoologico**
+Atributos:
+-nombre: String
+-ubicacion: String
+Operaciones:
++abrirZoologico(): void
++cerrarZoologico(): void
+
+**8. MedidasDeSeguridad**
+Atributos:
+-nivelDeRiesgo: String
+-descripcion: String
+Operaciones:
++inspeccionarSeguridad(): void
+
+**9. TamanoZoologico**
+Atributos:
+metrosCuadrados: Double (paquete)
+Operaciones:
++calcularCapacidadMaxima(): int
+
+**10. Boleto**
+Atributos:
+-tipo: String (ej. "diario", "anual", "VIP")
+-precio: Double
+-fechaExpedicion: Date
+Operaciones:
++calcularDescuento(tipoCliente: String): Double
+
+**11. GuiaTuristico**
+Atributos:
+-nombre: String
+-idioma: String
+Operaciones:
++realizarTour(horario: String): void
+Conexión:
+1.. relación* con Itinerario (un guía puede tener varios itinerarios).
+
+**12. Itinerario**
+Atributos:
+horarioVisita: String (paquete)
+duracion: Double (paquete)
+-zonaAsignada: String
+Operaciones:
++calcularDuracionTotal(): Double
+Conexión:
+1.. relación* con GuiaTuristico (un guía puede tener varios itinerarios).
+
+**13. Animales**
+Atributos:
+idAnimal: int (paquete)
+-nombre: String
+-edad: int
+Operaciones:
++comer(): void
++dormir(): void
+Conexiones:
+1.. relación* con Habitat (un animal vive en un hábitat específico).
+1.. relación* con RegistroMedico (cada animal puede tener varios registros médicos).
+
+**14. TiposDeAnimales (clase base)**
+Sin atributos ni operaciones específicas, pero actúa como base para los tipos específicos de alimentación de animales.
+Conexiones:
+Relación de herencia con las clases de alimentación de animales.
+
+**15. AlimentoQueConsumen (clase abstracta para categorías de alimentación)**
+Clases derivadas:
+Omnivoros (ej. mapache, oso)
+Carroñeros (ej. buitre, hiena)
+Carnivoros (ej. tigre, león)
+Herbivoros (ej. elefante, jirafa)
+
+**16. Habitat**
+Atributos:
+tipoHabitat: String (paquete)
+-temperatura: Double
+-humedad: Double
+Operaciones:
++ajustarCondiciones(temperatura: Double, humedad: Double): void
+Conexión:
+1.. relación* con Animales (un hábitat puede tener varios animales).
+
+**17. Inventario**
+Atributos:
+nombreArticulo: String (paquete)
+-cantidad: int
+-ubicacion: String
+Operaciones:
++actualizarStock(nuevaCantidad: int): void
++consultarInventario(): String
+
+**Conexiones:**
+
+1.. relación* con Administracion (la administración puede revisar y gestionar el inventario).
+
+Conexiones y Multiplicidades
+
+Persona se extiende en Cliente y Visitante.
+
+Cliente y Visitante tienen relación 1..* con Boleto (cada cliente o visitante puede adquirir varios boletos).
+
+GuiaTuristico tiene relación 1..* con Itinerario.
+
+Animales tiene relación 1..* con RegistroMedico y 1..* con Habitat.
+
+Veterinaria tiene relación 1..* con RegistroMedico.
+
+Inventario tiene relación 1..* con Administracion.
+
+TiposDeAnimales se divide en Omnivoros, Carroñeros, Carnivoros, y Herbivoros.
