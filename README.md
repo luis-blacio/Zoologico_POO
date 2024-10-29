@@ -11,8 +11,8 @@ Ing. Edison Coronel.
 - Luis Blacio.
 
 # Descripción 
-El siguiente diagrama de clases continen los siguientes requerimientos:
-Modelo UML completo para un Zoológico
+El siguiente diagrama de clases continen los diversos requerimientos:
+**Modelo UML completo para un Zoológico**
 
 **1. Persona**
 Atributos:
