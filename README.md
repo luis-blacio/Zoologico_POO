@@ -522,3 +522,7 @@ Veterinaria tiene relación 1..* con RegistroMedico.
 Inventario tiene relación 1..* con Administracion.
 
 TiposDeAnimales se divide en Omnivoros, Carroñeros, Carnivoros, y Herbivoros.
+
+# Diagrama en base a GitFlow
+![image](https://github.com/user-attachments/assets/3f2fa7b5-92e4-4db9-a8f8-85cd4e00d199)
+https://app.diagrams.net/#HTayron2024%2FTrabajos-de-la-Universidad%2Fmain%2FDiagrama%20Zoologico#%7B"pageId"%3A"c7488fd3-1785-93aa-aadb-54a6760d102a"%7D
