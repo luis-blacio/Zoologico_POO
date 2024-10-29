@@ -8,7 +8,7 @@ Ing. Edison Coronel.
 - Mathias Medina. 
 - Santiago Villamagua.
 - Leonardo Sánchez.
-- Luis Blacio.
+- Luis Blacio.dsdffd
 
 # Descripción 
 El siguiente diagrama de clases continen los diversos requerimientos:
