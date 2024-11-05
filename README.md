@@ -18,10 +18,11 @@ Ing. Edison Coronel.
 
 # Diagrma en UML
 
-![image](https://github.com/user-attachments/assets/13d4d710-cedf-4f9e-8093-b7b5c425bc37)
+![Captura de pantalla 2024-11-05 001247](https://github.com/user-attachments/assets/db952290-0c0e-42f8-bc36-c3080b7ecdd5)
 
 
-https://drive.google.com/file/d/1LJSIjIv8ey1L4BOst4B9Bg7-yTfGMv70/view?usp=sharing
+
+https://drive.google.com/file/d/11yHaZgNEyvEIH6pHT3hl1MfJGRo_Jf6i/view?usp=sharing
 
 
 # Diagrama en base a GitFlow
