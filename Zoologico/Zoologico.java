@@ -25,7 +25,7 @@ public class Zoologico {
     public void mostrarZonas() {
         System.out.println("Zonas del Zoológico " + nombre + ":");
         for (Zona zona : zonas) {
-            System.out.println("- " + zona);
+            System.out.println("- " + zona.toString());
         }
     }
 }
