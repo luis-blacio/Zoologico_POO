@@ -22,4 +22,10 @@ public class Zona {
             System.out.println("- " + animal.getEspecie());
         }
     }
+
+    @Override
+    public String toString() {
+        return "Zona: " + nombre + " (" + ubicacion + ")";
+    }
 }
+
