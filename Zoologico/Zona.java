@@ -23,9 +23,13 @@ public class Zona {
         }
     }
 
-    @Override
-    public String toString() {
-        return "Zona: " + nombre + " (" + ubicacion + ")";
+    // Método getter para nombre
+    public String getNombre() {
+        return nombre;
+    }
+
+    // Método getter para ubicacion
+    public String getUbicacion() {
+        return ubicacion;
     }
 }
-
