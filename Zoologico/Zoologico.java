@@ -22,10 +22,20 @@ public class Zoologico {
         empleados.add(empleado);
     }
 
+    // Método getter para nombre
+    public String getNombre() {
+        return nombre;
+    }
+
+    // Método getter para la lista de zonas
+    public List<Zona> getZonas() {
+        return zonas;
+    }
+
     public void mostrarZonas() {
         System.out.println("Zonas del Zoológico " + nombre + ":");
         for (Zona zona : zonas) {
-            System.out.println("- " + zona.toString());
+            System.out.println("- " + zona);
         }
     }
 }
